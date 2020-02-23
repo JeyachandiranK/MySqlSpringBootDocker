@@ -1,6 +1,5 @@
 # MySqlSpringBootDocker
 
-Spring Boot on Docker connecting to MySQL Docker container
 Use MySQL Image published by Docker Hub (https://hub.docker.com/_/mysql/) Command to run the mysql container docker run --name mysql-spring-boot-docker-application -e MYSQL_ROOT_PASSWORD=password -e MYSQL_DATABASE=trial -e MYSQL_USER=sa -e MYSQL_PASSWORD=password -d mysql:5.6
 
 In the Spring Boot Application, use the same container name of the mysql instance in the application.properties spring.datasource.url = jdbc:mysql://mysql-spring-boot-docker:3306/trial
